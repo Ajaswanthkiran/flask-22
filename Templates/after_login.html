@@ -1,0 +1,45 @@
+{% extends 'Bootstrap_base.html' %}
+
+{% block content %}
+
+<div class="bar">
+  <link rel="stylesheet" href="{{url_for('static',filename='CSS/nav_bar_css.css')}}">
+  <div>
+  <img src="{{url_for('static',filename='images/logo3.png')}}" alt="image not found" id="img1">
+  </div>
+  <div class="lists">
+<ul class="ulclass">
+  <li class="nav_item">
+    <a class="nav_link active" aria-current="page" href="http://127.0.0.1:5000"><span>HOME</span></a>
+  </li>
+  <li class="nav_item">
+    <a class="nav_link" href="http://127.0.0.1:5000/login"><span>LAB TEST</span></a>
+  </li>
+  <li class="nav_item">
+    <a class="nav_link" href="#"><span>Medicines</span></a>
+  </li>
+  <li class="nav_item">
+    <a class="nav_link">Wellbeing</a>
+  </li>
+</ul>
+</div>
+<div class="mar">
+  <div class="styles__search-bar___nwXaU"><form id="srchBarShwInfo-form" name="searchForm" class="styles__search-form___3JMjr">
+    <input type="text" id="srchBarShwInfo" placeholder="Search for Medicines and Health Products" value="" autocomplete="off" name="name" data-auto-search-bar="true" class="styles__search-input___3I6VS"><span>
+    <button class="but" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+  </span>
+  </form>
+  </div></div>
+  <div class="styles__profile-navigation___3SV-l">
+<div class="login" >{{ email }}
+  <img src="{{url_for('static',filename='images/login.png')}}" id="log">
+  </div>
+  <div class="styles__cart-counter___2nq62">
+    <div data-auto-cart-counter="true" class="CartCounter__cart-counter-list___1a7tL">
+      <div class="CartCounter__cart-img___3xOz1 CartCounter__cart-black___RXZ58"></div>
+    </div>
+  </div>
+</div></div>
+{% endblock %}

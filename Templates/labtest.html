@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}LAB TEST{% endblock %}</title>
+</head>
+
+<body>
+{% include 'nav_bar.html' %}
+
+{% block content%}
+<div class="img1">
+<img src="{{url_for('static',filename='/images/lab.jpg')}}" alt="image not found" class="img1">
+    </div>
+{% endblock %}
+</body>
+
+</html>

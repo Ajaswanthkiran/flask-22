@@ -1,0 +1,38 @@
+
+<link rel="stylesheet" href="{{url_for('static',filename='CSS/home_css.css')}}">
+{% include 'nav_bar.html' %}
+{% block content %}
+  <section class="headline">
+    <h1>HEALTHCARE & WELLBEING </h1>
+    <p>A Better way of life!</p>
+  </section>
+  <section class="features">
+    <div class="feature-container">
+      <img src="static/images/backgrond_signup2.jpg" alt="Flexbox Feature">
+      <h2>MENTAL HEALTH</h2>
+      <p>What is mental health? Mental health includes our emotional, psychological, and social well-being</p>
+    </div>
+    <div class="feature-container">
+      <img src="static/images/logo3.png" alt="Flexbox Feature">
+      <h2>Meditation</h2>
+      <p>Meditation is a practice in which an individual uses a technique – such as mindfulness, or focusing the mind on a particular object, thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally</p>
+    </div>
+    <div class="feature-container">
+      <img src="static/images/back.png" alt="Flexbox Feature">
+      <h2>Basic HTML5</h2>
+      <p>This pen contains basic html to setup the page to display the responsive navbar.</p>
+    </div>
+  </section>
+    <script >$("#search-icon").click(function() {
+  $(".nav").toggleClass("search");
+  $(".nav").toggleClass("no-search");
+  $(".search-input").toggleClass("search-active");
+});
+
+$('.menu-toggle').click(function(){
+   $(".nav").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+</script>
+</div>
+{% endblock%}
